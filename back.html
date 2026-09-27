@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keypad Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="phone">
+    <h2>SNAKE</h2>
+
+    <div id="score">Score: 0</div>
+    <canvas id="game" width="240" height="240"></canvas>
+
+    <div class="keypad">
+      <button onclick="changeDirection('UP')">2</button>
+
+      <button onclick="changeDirection('LEFT')">4</button>
+      <button onclick="startGame()">5</button>
+      <button onclick="changeDirection('RIGHT')">6</button>
+
+      <button onclick="changeDirection('DOWN')">8</button>
+    </div>
+
+    <p>2 ↑ &nbsp; 4 ← &nbsp; 6 → &nbsp; 8 ↓</p>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
